@@ -1,1 +1,75 @@
-/* Your CSS here. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 38px 20px;
+  background-color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+.profile-card {
+  max-width: 724px;
+  min-height: 580px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #626262;
+  color: #ffffff;
+  text-align: center;
+}
+
+.profile-image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 20px 0 12px;
+  font-size: 32px;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 5px;
+}
+
+.biography {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.biography p {
+  margin: 0 0 16px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .profile-card {
+    min-height: 0;
+    padding: 24px 20px;
+  }
+}
